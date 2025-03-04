@@ -1,0 +1,84 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imagenView"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:scaleType="centerCrop"
+            android:background="@color/light_grey"/>
+
+        <TextView
+            android:id="@+id/nombreTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/imagenView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/especieTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Especie"
+            android:textColor="@color/dark_grey"
+            app:layout_constraintTop_toBottomOf="@id/nombreTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/razaTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Raza"
+            android:textColor="@color/dark_grey"
+            app:layout_constraintTop_toBottomOf="@id/especieTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/edadTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Edad"
+            android:textColor="@color/dark_grey"
+            app:layout_constraintTop_toBottomOf="@id/razaTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/vacunadaTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Vacunada"
+            android:textColor="@color/dark_grey"
+            app:layout_constraintTop_toBottomOf="@id/edadTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CRUD2</string>
+    <string name="registrar_mascota">Registrar Mascota</string>
+</resources>

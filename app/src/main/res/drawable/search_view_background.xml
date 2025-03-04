@@ -1,0 +1,6 @@
+<!-- res/drawable/search_view_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/white"/> <!-- Color de fondo -->
+    <corners android:radius="24dp"/> <!-- Bordes redondeados -->
+    <stroke android:width="1dp" android:color="@color/light_blue"/> <!-- Borde -->
+</shape>
